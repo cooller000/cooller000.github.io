@@ -1,0 +1,6 @@
+markdown: rdiscount
+permalink: /:year/:month/:title/
+url: http://cooller000.github.io
+author: Cooller000
+pygments: true
+paginate: 24
