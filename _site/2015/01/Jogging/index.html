@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Cooller000" />
     <meta name="viewport" content="width=device-width"> 
-    <title>links | Cooller000</title>
+    <title>2015健身日志 | Cooller000</title>
 	<!-- Jim disable
 	script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true&skin=Desert"></script-->
     <link href="/feed/" rel="alternate" title="Cooller000" type="application/atom+xml" />
@@ -40,15 +40,46 @@
           <a href="/about" class="ss-icon" title="About" >user</a>
           <a href="/feed" class="ss-icon" title="Subscribe by RSS" >rss</a>
         </div>
-        <h1>links</h1>
+        <h1>2015健身日志</h1>
         </header>
         <hr>
         <article class="content">
         <section class="post">
-<p>暂无</p>
+<h3>20150110</h3>
+
+<p>1.5 + 3.5 + 1</p>
 
 </section>
+<section class="meta">
+<hr/>
+<span class="author">
+  <a href="http://cooller000.github.io">Cooller000</a> - 刚入行程序员，C,Linux驱动，Android Media FrameWork,深圳。
+</span>
+<br />
+<span class="license">
+  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
+</span>
 
+<span class="categories">
+  in categories
+  
+  <a href="/categories/#life" title="life">life</a>&nbsp;
+  
+</span>
+
+
+<span class="tags">
+  tagged with 
+  
+  <a href="/tags/#jogging" title="jogging">jogging</a>&nbsp;
+  
+</span>
+
+<span class="time">
+  <br/>
+  <time datetime="2015-01-10">2015-01-10</time>
+</span>
+</section>
 <section class="comment">
 <!-- baidu JIA -->
 <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
@@ -72,8 +103,86 @@ var duoshuoQuery = {short_name:"cooller000"};
 </section>
 
 
+<script type="text/javascript">
+$(function(){
+  $(document).keydown(function(e) {
+    var url = false;
+        if (e.which == 37 || e.which == 74) {  // Left arrow and J
+            
+        url = 'http://cooller000.github.io/2015/01/First-Push/';
+        
+        }
+        else if (e.which == 39 || e.which == 75) {  // Right arrow and K
+            
+        }
+        if (url) {
+            window.location = url;
+        }
+  });
+})
 
+</script>
 
+<style type="text/css">
+/*resize the big pic*/
+div.resized_image p {
+  margin: 2px;
+  margin-top: 0;
+  font-size: 8px;
+  /* Awesome icon from here: http://www.famfamfam.com/lab/icons/silk/ */
+  background: url(http://i242.photobucket.com/albums/ff244/9861_omikron/error.png) no-repeat;
+  padding-left: 20px;
+  color: #333;
+}
+</style>
+<script type="text/javascript">
+//resize the big pic
+$(window).load(function() {
+  (
+    function(maxht, maxwt, minht, minwt) {
+      var imgs = document.getElementsByTagName('img');
+      // Image resizing function
+      var resize_image = function(img, newht, newwt) {
+        img.height = newht;
+        img.width  = newwt;
+        $(img).wrap('<table><tr><td class="tborder"><div class="resized_image"><a href="' + img.src + '" target="_blank"></a></div></td></tr></table>');
+        $(img).parent().before('<p>NOTE: This image was resized. To view it full-size, click on the image.</p>');
+        //$(img).parent().after('<p style="text-align:right;background:none;margin:0;padding-right:3px">Image resizing script by <a href="http://aetus.net/217/programming/automatically-resize-large-images-with-javascript/">Aetus Designs</a>.</p>');
+      };
+      
+      for (var i = 0; i < imgs.length; i++) {
+        // Set a variable for the current image to make the code make more sense.
+        var img = imgs[i];
+        if (img.height > maxht || img.width > maxwt) {
+          // Use Ratios to constraint proportions.
+          var old_ratio = img.height / img.width;
+          var min_ratio = minht / minwt;
+          // If it can scale perfectly.
+          if (old_ratio === min_ratio) {
+            resize_image(img, minht, minwt);
+          } 
+          // We need to do some magic now.
+          else {
+            var newdim = [img.height, img.width];
+            // Sort out the height first.
+            newdim[0] = minht;
+            // The logic behind this is that if ratio = ht / wt, then wt = ht / ratio.
+            newdim[1] = newdim[0] / old_ratio;
+            // Do we still have to sort out the width?
+            if (newdim[1] > maxwt) {
+              // Just do what we did with the height
+              newdim[1] = minwt;
+              newdim[0] = newdim[1] * old_ratio;
+            }
+            // So yeah, resize the image
+            resize_image(img, newdim[0], newdim[1]);
+          }
+        }
+      }
+    }
+  )(780, 780, 780, 780);
+});
+</script>
 
         </article>
       </div>
