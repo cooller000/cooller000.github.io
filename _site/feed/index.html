@@ -7,7 +7,7 @@
     <title>Cooller000</title>
     <link href="http://cooller000.github.io/feed/" rel="self" />
     <link href="http://geeklu.com" />
-    <lastBuildDate>2015-04-07T23:08:05+08:00</lastBuildDate>
+    <lastBuildDate>2015-04-08T23:02:18+08:00</lastBuildDate>
     <webMaster>feng569926@gmail.com</webMaster>
     
     <item>
@@ -22,8 +22,13 @@
 
 <p>demuxing_decoding.c</p>
 
-<p>0407:
-Makefile problem </p>
+<ul>
+<li>step by step</li>
+</ul>
+
+<p>0407:</p>
+
+<p>Makefile problem </p>
 
 <p><a href="https://www.ffmpeg.org/ffmpeg.html">https://www.ffmpeg.org/ffmpeg.html</a></p>
 
@@ -32,6 +37,64 @@ Makefile problem </p>
 <p><a href="http://blog.csdn.net/leixiaohua1020/article/details/39802819">http://blog.csdn.net/leixiaohua1020/article/details/39802819</a></p>
 
 <p><a href="http://blog.csdn.net/cyh_24/article/details/8038700">http://blog.csdn.net/cyh_24/article/details/8038700</a></p>
+
+<p>0408:</p>
+
+<p>yuvplayer</p>
+
+<p><a href="http://www.yuvplayer.com/">http://www.yuvplayer.com/</a></p>
+
+<ul>
+<li>数据结构</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">AVFormatContext
+
+AVStream
+
+AVCodecContext
+
+AVPacket
+
+AVFrame
+</code></pre></div>
+<p><a href="http://blog.csdn.net/leixiaohua1020/article/details/11693997">http://blog.csdn.net/leixiaohua1020/article/details/11693997</a></p>
+
+<ul>
+<li>基本流程</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">av_register_all
+
+avformat_open_input
+
+avformat_find_stream_info
+
+open_codec_context
+{
+    av_find_best_stream    
+
+    avcodec_find_decoder
+
+    avcodec_open2
+}
+
+av_frame_alloc
+
+av_init_packet
+
+av_read_frame
+
+decode_packet
+{
+    avcodec_decode_video2    
+
+    av_image_copy
+}
+
+av_free_packet
+</code></pre></div>
+<ul>
+<li>技术点</li>
+</ul>
 ]]></content:encoded>
     </item>
     
