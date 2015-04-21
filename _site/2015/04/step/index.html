@@ -73,6 +73,23 @@
 
 <p><a href="http://www.yuvplayer.com/">http://www.yuvplayer.com/</a></p>
 
+<p>0421:</p>
+
+<p>Makefile</p>
+
+<p>《跟我一起写 Makefile》</p>
+
+<p>CPATH
+ <a href="https://gcc.gnu.org/onlinedocs/cpp/Environment-Variables.html">https://gcc.gnu.org/onlinedocs/cpp/Environment-Variables.html</a></p>
+
+<p>LIBRARY_PATH
+ <a href="http://www.cnblogs.com/panfeng412/archive/2011/10/20/library_path-and-ld_library_path.html">http://www.cnblogs.com/panfeng412/archive/2011/10/20/library_path-and-ld_library_path.html</a></p>
+
+<p>.a .so
+ <a href="http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html">http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html</a></p>
+
+<p><a href="http://stackoverflow.com/questions/9809213/what-are-a-and-so-files">http://stackoverflow.com/questions/9809213/what-are-a-and-so-files</a></p>
+
 <ul>
 <li>数据结构</li>
 </ul>
@@ -139,10 +156,23 @@ av_free_packet
         播放-停止-暂停
         mp4+h264
     设计
-        输入+主控+输出
-        输入：网络、本地
+             主控
+        输入+处理+输出
         主控：业务、控制
+        输入：网络or本地+解复用
+        处理: 视频解码+音频解码
         输出：送显+送音
+    分块
+        参照QtAv的分块
+        解复用 AVDemuxer.h
+        解码   AVDecoder.h
+        业务   AVPlayer.h
+界面:
+    地址栏
+    显示区域
+    进度条
+    检索time or index
+    播放+暂停
 </code></pre></div>
 </section>
 <section class="meta">
@@ -291,7 +321,7 @@ $(window).load(function() {
 		<!-- *** Please Keep bellow link for at least 6 months! Thanks！*** -->
 		<a href="http://blog.sevenche.com">Template Maintained by Jim</a>
 		
-		| <span class="label label-info">2015-04-09 23:51:51 CST</span></small></p>
+		| <span class="label label-info">2015-04-21 22:07:15 CST</span></small></p>
     </footer>
 
     </div>

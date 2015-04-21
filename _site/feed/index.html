@@ -7,7 +7,7 @@
     <title>Cooller000</title>
     <link href="http://cooller000.github.io/feed/" rel="self" />
     <link href="http://geeklu.com" />
-    <lastBuildDate>2015-04-09T23:51:51+08:00</lastBuildDate>
+    <lastBuildDate>2015-04-21T22:07:15+08:00</lastBuildDate>
     <webMaster>feng569926@gmail.com</webMaster>
     
     <item>
@@ -43,6 +43,23 @@
 <p>yuvplayer</p>
 
 <p><a href="http://www.yuvplayer.com/">http://www.yuvplayer.com/</a></p>
+
+<p>0421:</p>
+
+<p>Makefile</p>
+
+<p>《跟我一起写 Makefile》</p>
+
+<p>CPATH
+ <a href="https://gcc.gnu.org/onlinedocs/cpp/Environment-Variables.html">https://gcc.gnu.org/onlinedocs/cpp/Environment-Variables.html</a></p>
+
+<p>LIBRARY_PATH
+ <a href="http://www.cnblogs.com/panfeng412/archive/2011/10/20/library_path-and-ld_library_path.html">http://www.cnblogs.com/panfeng412/archive/2011/10/20/library_path-and-ld_library_path.html</a></p>
+
+<p>.a .so
+ <a href="http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html">http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html</a></p>
+
+<p><a href="http://stackoverflow.com/questions/9809213/what-are-a-and-so-files">http://stackoverflow.com/questions/9809213/what-are-a-and-so-files</a></p>
 
 <ul>
 <li>数据结构</li>
@@ -110,10 +127,23 @@ av_free_packet
         播放-停止-暂停
         mp4+h264
     设计
-        输入+主控+输出
-        输入：网络、本地
+             主控
+        输入+处理+输出
         主控：业务、控制
+        输入：网络or本地+解复用
+        处理: 视频解码+音频解码
         输出：送显+送音
+    分块
+        参照QtAv的分块
+        解复用 AVDemuxer.h
+        解码   AVDecoder.h
+        业务   AVPlayer.h
+界面:
+    地址栏
+    显示区域
+    进度条
+    检索time or index
+    播放+暂停
 </code></pre></div>]]></content:encoded>
     </item>
     
@@ -493,6 +523,14 @@ src/codec/video/VideoDecoderFFmpeg.cpp
 <h3 id="20150407">20150407</h3>
 
 <p>1+3.5+1 km 50min 79kg</p>
+
+<h3 id="20150412">20150412</h3>
+
+<p>1+3.5+1 km 50min 78kg</p>
+
+<h3 id="20150421">20150421</h3>
+
+<p>1+3+1 km 50min 78kg</p>
 ]]></content:encoded>
     </item>
     
